@@ -1,16 +1,23 @@
 {
   "name": "pixi-autolayout",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1",
+  "description": "Wrapper around autolayout.js and PIXI.js that helps to use VFL to build elements in PIXI.",
   "main": "bundle.js",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "prepare": "npm run build",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
   },
-  "author": "Anton Melnyk",
+  "author": "pixelgoo",
   "license": "ISC",
+  "keywords": ["pixi", "autolayout"],
   "dependencies": {
-    "autolayout": "^0.7.0",
-    "pixi.js": "^5.2.0"
+    "autolayout": "latest",
+    "pixi.js": "latest"
   },
   "devDependencies": {
     "ts-loader": "^6.2.1",

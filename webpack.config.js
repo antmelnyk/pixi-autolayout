@@ -1,12 +1,12 @@
 var path = require("path");
 
 module.exports = {
-  entry: "./source/PIXILayout.ts",
+  entry: "./src/PIXILayout.ts",
 
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "lib"),
     publicPath: "/",
-    filename: "bundle.js"
+    filename: "index.js"
   },
 
   resolve: {

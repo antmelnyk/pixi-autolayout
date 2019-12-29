@@ -5,7 +5,7 @@
  * @export
  * @class PIXIRendererFacade
  */
-export default class PIXIRendererFacade {
+class PIXIRendererFacade {
   process(element: PIXI.DisplayObject, subView: any) {
     element.position.x = subView.left;
     element.position.y = subView.top;
@@ -22,3 +22,5 @@ export default class PIXIRendererFacade {
     }
   }
 }
+
+export default PIXIRendererFacade;

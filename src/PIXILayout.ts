@@ -8,7 +8,7 @@ const AutoLayout = require("autolayout");
  *
  * @class PIXILayout
  */
-export default class PIXILayout {
+class PIXILayout {
   /**
    * The VFL markup can be either a string or an array of strings.
    * Strings may also contain '\n' which indicates that a new line of VFL will begin.
@@ -150,10 +150,12 @@ export default class PIXILayout {
   private setChildren() {
     for (let key in this.view.subViews) {
       const element = this._app.stage.getChildByName(key);
-      
+
       if (element) {
         this.children.set(key, element);
       }
     }
   }
 }
+
+export default PIXILayout;
